@@ -4,6 +4,7 @@ This is an Apex class with a corresponding test class that enables SFDC lead con
 
 To deploy this, you must have Salesforce administrator privilege:
 
+<<<<<<< HEAD
 1 - Create classes in SFDC Sandbox environment\n
 2 - Update test class with valid AccountId, OwnerId and LeadId\n
 3 - Run tests in SFDC development console\n
