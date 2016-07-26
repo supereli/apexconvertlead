@@ -1,0 +1,23 @@
+@isTest
+private class RestLeadConvertTest {
+    
+  static testMethod void testDoGet() {
+      
+    String ownerId='004U0000006guIF' //This should be a valid 15-digit ownerId for testing;
+    String accountId='002U000001jMOSo'; //This should be a valid 15-digit accountId for testing
+    String leadId='003U000000gpsCx'; //This should be a valid 15-digit leadId for testing
+
+    RestRequest req = new RestRequest(); 
+    RestResponse res = new RestResponse();
+      
+    req.requestURI = 'https://na3.salesforce.com/services/apexrest/Leadconvert/' + ownerId + '/' + accountId + '/' + leadId;  
+    req.httpMethod = 'GET';
+    RestContext.request = req;
+    RestContext.response = res;
+
+    String results = RestLeadConvert.doGet();
+
+    System.assertEquals('ok', results);
+
+  }
+}
