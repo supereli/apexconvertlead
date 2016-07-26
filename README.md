@@ -4,12 +4,18 @@ This is an Apex class with a corresponding test class that enables SFDC lead con
 
 To deploy this, you must have Salesforce administrator privilege:
 
-<<<<<<< HEAD
-1 - Create classes in SFDC Sandbox environment\n
-2 - Update test class with valid AccountId, OwnerId and LeadId\n
-3 - Run tests in SFDC development console\n
-4 - Test the function from the SFDC sandbox REST API\n
-5 - Modify the test class with valid AccountId, OwnerId and LeadId from production environment\n
-6 - Ensure sandbox environment has proper access to send change set to production\n
-7 - Add restleadconvert and restleadconverttest to change set and deploy to production\n
-8 - Test REST API in production by converting 1 lead\n
+1 - Create classes in SFDC Sandbox environment
+
+2 - Update test class with valid AccountId, OwnerId and LeadId
+
+3 - Run tests in SFDC development console
+
+4 - Test the function from the SFDC sandbox REST API
+
+5 - Modify the test class with valid AccountId, OwnerId and LeadId from production environment
+
+6 - Ensure sandbox environment has proper access to send change set to production
+
+7 - Add restleadconvert and restleadconverttest to change set and deploy to production
+
+8 - Test REST API in production by converting 1 lead
